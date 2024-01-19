@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './style.scss';
 import Board from './components/board';
 
