@@ -59,6 +59,16 @@ function App() {
 
   return (
     <div className="app">
+      <div style={{ fontSize: '30px', marginBottom: '10px' }}>
+        TIC{' '}
+        <span
+          className={`${history[currentMove].isXNext === false ? 'text-green' : 'text-orange'}`}
+          style={{ fontWeight: 'bolder' }}
+        >
+          TAC
+        </span>{' '}
+        TOE
+      </div>
       <Status winner={winner} gamingBoard={gamingBoard} />
       <Board
         squares={gamingBoard.squares}
